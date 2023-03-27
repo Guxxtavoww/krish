@@ -24,7 +24,7 @@ export const PopUpOverlay = styled(motion.div)`
   }
 `;
 
-export const PopUpContainer = styled(motion.div)`
+export const PopUpContainer = styled(motion.div)<{ isPrivacyPolicy: boolean }>`
   position: relative;
   width: 100%;
   max-width: 520px;

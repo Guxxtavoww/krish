@@ -32,6 +32,7 @@ const PopUp: React.FC<iPopUpProps> = ({
               scale: [0.85, 1],
             }}
             exit={{ opacity: [1, 0], scale: [1, 0.55] }}
+            isPrivacyPolicy={type === 'policy'}
           >
             <CloseButton onClick={handleClose} currenttheme={type}>
               <CloseIcon
