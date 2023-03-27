@@ -57,17 +57,12 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
   gap: 6px;
-
-  span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root {
-    color: #0d0d0d !important;
-  }
 `;
 
 export const SubmitButton = styled(Button)`
   background-color: ${WHATSAPP_BUTTON_BG} !important;
   color: #fff !important;
   padding: 5px 10px !important;
-  text-transform: uppercase;
-  font-size: 1.1em !important;
+  font-size: 0.95em !important;
   font-weight: 300 !important;
 `;

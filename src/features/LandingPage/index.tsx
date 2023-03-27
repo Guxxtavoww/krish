@@ -1,7 +1,13 @@
 import React from 'react';
 
 import { Footer, Header } from '@/components';
-import { Banner, MedicalInsurance, Differentials } from '@/containers';
+import {
+  Banner,
+  MedicalInsurance,
+  Differentials,
+  About,
+  Procedures,
+} from '@/containers';
 
 import { LandingPageContainer } from './styles';
 
@@ -11,6 +17,8 @@ const LandingPage: React.FC = () => (
     <Banner />
     <MedicalInsurance />
     <Differentials />
+    <About />
+    <Procedures />
     <Footer />
   </LandingPageContainer>
 );

@@ -72,7 +72,7 @@ const Whatsapp: React.FC = () => {
           }
           label="Aceito as politicas de Privacidade"
         />
-        <SubmitButton type="submit">INICIAR CONVERSA</SubmitButton>
+        <SubmitButton type="submit">Iniciar Coversa</SubmitButton>
       </FormContainer>
     </WhatsappContainer>
   );
