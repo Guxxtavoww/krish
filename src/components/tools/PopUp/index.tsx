@@ -3,12 +3,12 @@ import { AnimatePresence } from 'framer-motion';
 import { ClickAwayListener } from '@mui/material';
 import { Close as CloseIcon } from '@mui/icons-material';
 
+import { Loader } from '@/components';
 import { WHATSAPP_BUTTON_BG } from '@/styles/constants';
 
 import { iPopUpProps } from './types';
 import { handleMapComponents } from './components';
 import { PopUpContainer, PopUpOverlay, CloseButton } from './styles';
-import Loader from '@/components/layout/Loader';
 
 const PopUp: React.FC<iPopUpProps> = ({
   handleClose,
