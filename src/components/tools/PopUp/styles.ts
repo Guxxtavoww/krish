@@ -30,7 +30,6 @@ export const PopUpContainer = styled(motion.div)`
   max-width: 520px;
   border-radius: 10px;
   background-color: #fff;
-  color: ${MAIN_COLOR};
 
   & > div {
     width: 100%;
@@ -44,8 +43,8 @@ export const CloseButton = styled(IconButton)<{
   currenttheme: iPopUpProps['type'];
 }>`
   position: absolute;
-  top: -20px;
-  right: -95%;
+  top: ${(props) => (props.currenttheme === 'policy' ? '8px' : '-20px')};
+  right: ${(props) => (props.currenttheme === 'policy' ? '8px' : '-95%')};
   width: 40px !important;
   height: 40px !important;
   border-radius: 8px !important;

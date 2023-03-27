@@ -1,13 +1,14 @@
 import { memo, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { CircularProgress, ClickAwayListener } from '@mui/material';
+import { ClickAwayListener } from '@mui/material';
 import { Close as CloseIcon } from '@mui/icons-material';
 
-import { MAIN_COLOR, WHATSAPP_BUTTON_BG } from '@/styles/constants';
+import { WHATSAPP_BUTTON_BG } from '@/styles/constants';
 
 import { iPopUpProps } from './types';
 import { handleMapComponents } from './components';
 import { PopUpContainer, PopUpOverlay, CloseButton } from './styles';
+import Loader from '@/components/layout/Loader';
 
 const PopUp: React.FC<iPopUpProps> = ({
   handleClose,
@@ -39,20 +40,7 @@ const PopUp: React.FC<iPopUpProps> = ({
                 }}
               />
             </CloseButton>
-            <Suspense
-              fallback={
-                <CircularProgress
-                  style={{
-                    maxWidth: '80px',
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                  }}
-                  color="inherit"
-                />
-              }
-            >
+            <Suspense fallback={<Loader />}>
               {handleMapComponents(type)}
             </Suspense>
           </PopUpContainer>
