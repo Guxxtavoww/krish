@@ -18,7 +18,7 @@ const PopUp: React.FC<iPopUpProps> = ({
 }) => (
   <AnimatePresence>
     {isOpen ? (
-      <PopUpOverlay exit={{ opacity: [1, 0], scale: [1, 0.55] }}>
+      <PopUpOverlay exit={{ opacity: [1, 0] }} animate={{ opacity: [0, 1] }}>
         <ClickAwayListener
           onClickAway={() => {
             if (closeWhenClickOutside) {
