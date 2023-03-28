@@ -17,6 +17,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutImageContainer = styled.div`
+  max-width: 100%;
   display: grid;
   place-items: center;
 
@@ -34,6 +35,7 @@ export const AboutContent = styled.div`
   justify-content: center;
   gap: 5rem;
   padding-right: 3rem;
+  max-width: 100%;
 
   p.content_text {
     font-size: 1.05em;
