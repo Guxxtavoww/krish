@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { TargetBlankLink } from '@/components';
+
 import Logo from '../Logo';
 import { FooterContainer } from './styles';
 
@@ -15,13 +17,9 @@ const Footer: React.FC = () => {
         <Logo />
         <span>@{new Date().getFullYear()} Todos os direitos reservados</span>
       </div>
-      <a
-        href="https://portfolio-gustavo-augusto.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <TargetBlankLink href="https://portfolio-gustavo-augusto.netlify.app/">
         Desenvolvido por Gustavo
-      </a>
+      </TargetBlankLink>
     </FooterContainer>
   );
 };
