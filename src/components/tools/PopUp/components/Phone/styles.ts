@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { MAIN_COLOR } from '@/styles/constants';
+
 export const PhoneContainer = styled.div`
   width: 100%;
   display: flex;
@@ -17,6 +19,7 @@ export const PhoneHeader = styled.header`
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
+    color: ${MAIN_COLOR};
   }
 `;
 
@@ -39,6 +42,7 @@ export const PhoneBody = styled.div`
 
     span {
       font-size: 1rem;
+      font-weight: 600;
     }
 
     .desc {

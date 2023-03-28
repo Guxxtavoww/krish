@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
 
-import { MAIN_BG, MAIN_TEXT_COLOR } from '@/styles/constants';
+import { MAIN_BG, MAIN_COLOR, MAIN_TEXT_COLOR } from '@/styles/constants';
+import { Button } from '@mui/material';
 
 export const ContactContainer = styled.section`
   width: 100%;
@@ -40,8 +41,19 @@ export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
       : css`
           align-items: flex-start;
           flex-direction: column;
-          gap: 1.25rem;
+          gap: 2.5rem;
           padding: 1.25rem 0;
+          .address_box {
+            margin-top: 1rem;
+            display: inline-flex;
+            align-items: flex-end;
+            text-align: justify;
+            gap: 5px;
+            svg {
+              width: 1.5em;
+              height: 1.5em;
+            }
+          }
         `}
 
   h2.title, 
@@ -61,5 +73,19 @@ export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
   @media screen and (max-width: 991px) {
     align-items: center;
     justify-content: center;
+  }
+`;
+
+export const LocationButton = styled(Button)`
+  background-color: ${MAIN_COLOR} !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+  font-size: 1.025em !important;
+  font-weight: 600 !important;
+  padding: 6px 14px !important;
+  margin-top: 1em !important;
+
+  a {
+    color: #fff;
   }
 `;

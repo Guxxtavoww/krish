@@ -30,5 +30,5 @@ export const SliderButton = styled(IconButton)<{
   position: 'left' | 'right';
 }>`
   background-color: rgba(0,0,0,.5) !important;
-  border-radius: 0 !important;
+  border-radius: 4px !important;
 `;

@@ -34,7 +34,7 @@ export const AboutContent = styled.div`
   padding-right: 3rem;
 
   p.content_text {
-    font-size: 1em;
+    font-size: 1.05em;
     font-weight: 500;
     line-height: 1.65em;
     text-align: justify;

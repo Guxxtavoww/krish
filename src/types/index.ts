@@ -12,3 +12,7 @@ export type FCWithChildren<
     ? ComponentProps & Children
     : ComponentProps & Partial<Children>
 >;
+
+export interface iLinkProps {
+  href: string;
+}
