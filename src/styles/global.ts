@@ -49,11 +49,11 @@ const GlobalStyles = createGlobalStyle`
   a.logo {
     max-width: 220px;
     min-width: 120px;
-    max-height: 100%;
+    max-height: 72px;
     img {
       object-fit: cover;
       max-width: 100%;
-      height: 100%;
+      max-height: 72px;
     }
   }
 

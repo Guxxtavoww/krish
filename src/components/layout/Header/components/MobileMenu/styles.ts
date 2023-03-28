@@ -21,11 +21,11 @@ export const MobileMenuContainer = styled.div`
 `;
 
 export const MobileMenuWrapper = styled(motion.div)`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
   background-color: #fff;
   display: flex;
   justify-content: center;

@@ -14,14 +14,12 @@ import { LandingPageContainer } from './styles';
 const LandingPage: React.FC = () => (
   <LandingPageContainer>
     <Header />
-    <div className="absolute_box">
-      <Banner />
-      <MedicalInsurance />
-      <Differentials />
-      <About />
-      <Procedures />
-      <Footer />
-    </div>
+    <Banner />
+    <MedicalInsurance />
+    <Differentials />
+    <About />
+    <Procedures />
+    <Footer />
   </LandingPageContainer>
 );
 

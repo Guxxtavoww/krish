@@ -33,4 +33,9 @@ export const ContainerWrapperContainer = styled(motion.section)`
     color: ${MAIN_TEXT_COLOR};
     font-weight: 300;
   }
+
+  @media screen and (max-width: 661px) {
+    gap: 1.5rem;
+    padding: 1rem 20px;
+  }
 `;
