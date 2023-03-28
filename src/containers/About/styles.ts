@@ -4,14 +4,15 @@ import styled from 'styled-components';
 import { MAIN_COLOR, MAIN_TEXT_COLOR } from '@/styles/constants';
 
 export const AboutContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 5px;
   width: 100%;
 
-  @media screen and (max-width: 1680px) {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  & > * {
+    flex: 1;
   }
 `;
 

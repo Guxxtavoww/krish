@@ -52,6 +52,7 @@ export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
             display: inline-flex;
             align-items: flex-end;
             text-align: justify;
+            flex-wrap: wrap;
             gap: 5px;
             svg {
               width: 1.5em;
@@ -77,6 +78,9 @@ export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
   @media screen and (max-width: 991px) {
     align-items: center;
     justify-content: center;
+    .address_box {
+      align-items: center;
+    }
   }
 `;
 
