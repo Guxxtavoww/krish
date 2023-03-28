@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
-    <>
+    <> 
       <ContactContainer id="contact">
         <ContactInnerContainer
           whileInView={{ opacity: [0, 1], scale: [0.75, 1] }}
