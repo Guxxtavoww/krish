@@ -29,7 +29,7 @@ export const PrivacyPolicyModalContainer = styled(motion.div)`
   padding: 1.75rem;
   min-height: 850px;
   width: 100%;
-  max-width: 500%;
+  max-width: 500px;
 `;
 
 export const CloseModalButton = styled(IconButton)`
@@ -46,6 +46,8 @@ export const PrivacyPolicyModalContent = styled.div`
   position: top;
   left: 0;
   top: 40px;
+  width: 100%;
   height: calc(850px - 40px);
   overflow-y: scroll;
+  background-color: inherit;
 `;
