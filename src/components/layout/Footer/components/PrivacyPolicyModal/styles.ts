@@ -51,4 +51,5 @@ export const PrivacyPolicyModalContent = styled.div`
   height: calc(850px - 40px);
   overflow-y: scroll;
   background-color: inherit;
+  padding: 0 10px;
 `;
