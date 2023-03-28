@@ -24,7 +24,11 @@ const Slider: React.FC = () => {
     <SliderContainer>
       <SliderButton
         position="left"
-        onClick={() => setCurrentScrollX((prevState) => prevState - 1050)}
+        onClick={() =>
+          setCurrentScrollX((prevState) =>
+            prevState === 0 ? prevState + 1050 : prevState - 1050
+          )
+        }
       >
         <AiOutlineArrowLeft fill="#fff" />
       </SliderButton>
