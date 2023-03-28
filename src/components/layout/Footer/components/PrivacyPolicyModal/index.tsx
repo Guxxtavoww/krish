@@ -1,7 +1,9 @@
-import React, { memo } from 'react';
+import React, { lazy, memo, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { ClickAwayListener } from '@mui/material';
 import { Close as CloseIcon } from '@mui/icons-material';
+
+import { Loader } from '@/components';
 
 import { iPrivacyPolicyModalProps } from '../types';
 import {
@@ -10,6 +12,8 @@ import {
   CloseModalButton,
   PrivacyPolicyModalContent,
 } from './styles';
+
+const Content = lazy(() => import('./utils/Content'));
 
 const PrivacyPolicyModal: React.FC<iPrivacyPolicyModalProps> = ({
   handleClose,
@@ -32,7 +36,11 @@ const PrivacyPolicyModal: React.FC<iPrivacyPolicyModalProps> = ({
             <CloseModalButton type="button" onClick={handleClose}>
               <CloseIcon fill="#fff" />
             </CloseModalButton>
-            <PrivacyPolicyModalContent></PrivacyPolicyModalContent>
+            <PrivacyPolicyModalContent>
+              <Suspense fallback={<Loader />}>
+                <Content />
+              </Suspense>
+            </PrivacyPolicyModalContent>
           </PrivacyPolicyModalContainer>
         </ClickAwayListener>
       </PrivacyPolicyModalOverlay>
