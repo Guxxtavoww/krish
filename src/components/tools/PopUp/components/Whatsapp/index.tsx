@@ -63,7 +63,7 @@ const Whatsapp: React.FC = () => {
           ref={cellInputRef}
           type="tel"
         />
-        <SubmitButton type="submit">INICIAR CONVERSA</SubmitButton>
+        <SubmitButton type="submit">Iniciar Coversa</SubmitButton>
       </FormContainer>
     </WhatsappContainer>
   );

@@ -31,5 +31,6 @@ export const ContainerWrapperContainer = styled(motion.section)`
     text-align: left;
     font-size: clamp(14px, 5vmin, 30px);
     color: ${MAIN_TEXT_COLOR};
+    font-weight: 300;
   }
 `;
