@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
 
   & > * {
