@@ -33,14 +33,14 @@ const Contact: React.FC = () => (
           29050-545
         </p>
         <Link href="https://www.instagram.com/drakrishnasandoval/">
-          <img src={instagram_icon} alt="Insta Icon" />
+          <img src={instagram_icon} alt="Insta Icon" loading="lazy" />
         </Link>
         <LocationButton type="button">
           <Link href="https://goo.gl/maps/DnPxuYaeWz98hQqF9">Ver no mapa</Link>
         </LocationButton>
       </ContactWrapper>
       <ContactWrapper isImageContainer>
-        <img src={contact_image} alt="Contact Image" />
+        <img src={contact_image} alt="Contact Image" loading="lazy" />
       </ContactWrapper>
     </ContactInnerContainer>
   </ContactContainer>

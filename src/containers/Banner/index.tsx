@@ -18,6 +18,7 @@ const Banner: React.FC = () => {
         whileInView={{ opacity: [0, 1], scale: [0.85, 1] }}
         className="banner_img"
         alt="banner"
+        loading="lazy"
       />
     </div>
   );

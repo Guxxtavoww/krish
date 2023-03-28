@@ -20,7 +20,7 @@ const About: React.FC = () => {
       </h2>
       <AboutContainer>
         <AboutImageContainer>
-          <img src={krish} alt="Krishna Sandoval" />
+          <img src={krish} alt="Krishna Sandoval" loading="lazy" />
         </AboutImageContainer>
         <AboutContent>
           <p className="content_text">

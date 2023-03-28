@@ -16,6 +16,7 @@ const MedicalInsurance: React.FC = () => (
           animate={{ opacity: [0, 1] }}
           transition={{ delay: 0.15 + (index - 0.75) }}
           key={index}
+          loading="lazy"
         />
       ))}
     </InsurancesArrayContainer>

@@ -34,7 +34,12 @@ const Slider: React.FC = () => {
       </SliderButton>
       <InnerSlider ref={sliderRef}>
         {proceduresArray.map((procedure, index) => (
-          <img src={procedure} alt={`Procedimento ${index}`} key={index} />
+          <img
+            src={procedure}
+            alt={`Procedimento ${index}`}
+            key={index}
+            loading="lazy"
+          />
         ))}
       </InnerSlider>
       <SliderButton
