@@ -5,7 +5,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { WHATSAPP_BUTTON_BG } from '@/styles/constants';
 
 import { header_links } from '../../utils/header_links';
-import Logo from '../Logo';
+import Logo from '../../../Logo';
 import {
   InnerContent,
   HeaderLink,

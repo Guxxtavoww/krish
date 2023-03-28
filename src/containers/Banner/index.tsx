@@ -10,10 +10,18 @@ const Banner: React.FC = () => {
 
   return (
     <div
-      style={{ width: '100%', background: MAIN_BG, paddingBottom: '3.5rem' }}
+      style={{
+        width: '100%',
+        background: MAIN_BG,
+        paddingBottom: '3.5rem',
+        objectFit: 'contain',
+      }}
     >
       <motion.img
-        style={{ maxWidth: '100%', objectFit: 'cover' }}
+        style={{
+          width: '100%',
+          objectFit: !isMobileDevice ? 'cover' : undefined,
+        }}
         src={isMobileDevice ? site_mobile_banner : site_banner}
         whileInView={{ opacity: [0, 1], scale: [0.85, 1] }}
         className="banner_img"

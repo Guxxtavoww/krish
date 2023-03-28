@@ -37,5 +37,8 @@ export const ContainerWrapperContainer = styled(motion.section)`
   @media screen and (max-width: 661px) {
     gap: 1.5rem;
     padding: 1rem 20px;
+    h2.container_title {
+      text-align: center;
+    }
   }
 `;

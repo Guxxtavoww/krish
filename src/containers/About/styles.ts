@@ -14,6 +14,9 @@ export const AboutContainer = styled.div`
   & > * {
     flex: 1;
   }
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutImageContainer = styled.div`

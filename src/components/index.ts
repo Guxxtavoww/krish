@@ -1,3 +1,4 @@
+export { default as Logo } from './layout/Logo';
 export { default as PopUp } from './tools/PopUp';
 export { default as Header } from './layout/Header';
 export { default as Footer } from './layout/Footer';
