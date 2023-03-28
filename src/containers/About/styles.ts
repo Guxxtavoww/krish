@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+  width: 100%;
 
   @media screen and (max-width: 1680px) {
     grid-template-columns: 1fr;
@@ -45,6 +46,8 @@ export const AboutContent = styled.div`
     align-items: center;
     padding-right: 0;
     gap: 2rem;
+    width: 100%;
+    padding: 0 8px;
   }
 `;
 
