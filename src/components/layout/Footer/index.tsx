@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from 'react';
+import React, { useState } from 'react';
 
 import { TargetBlankLink } from '@/components';
 
@@ -23,14 +23,10 @@ const Footer: React.FC = () => {
           Desenvolvido por Gustavo
         </TargetBlankLink>
       </FooterContainer>
-      <Suspense fallback={<></>}>
-        {isPrivacyPolicyModalOpen ? (
-          <PrivacyPolicyModal
-            isOpen={isPrivacyPolicyModalOpen}
-            handleClose={() => setIsPrivacyPolicyOpen(false)}
-          />
-        ) : null}
-      </Suspense>
+      <PrivacyPolicyModal
+        isOpen={isPrivacyPolicyModalOpen}
+        handleClose={() => setIsPrivacyPolicyOpen(false)}
+      />
     </>
   );
 };

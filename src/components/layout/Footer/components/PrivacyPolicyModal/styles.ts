@@ -27,18 +27,18 @@ export const PrivacyPolicyModalContainer = styled(motion.div)`
   background-color: #fff;
   border-radius: 10px;
   padding: 1.75rem;
-  min-height: 850px;
+  height: 850px;
   width: 100%;
   max-width: 500px;
 `;
 
 export const CloseModalButton = styled(IconButton)`
-  position: absolute;
+  position: absolute !important;
   background-color: ${MAIN_COLOR} !important;
   border-radius: 5px !important;
   color: #fff !important;
   top: 10px;
-  left: 10px;
+  right: 10px;
   height: 30px !important;
   width: 30px !important;
 `;
@@ -48,8 +48,8 @@ export const PrivacyPolicyModalContent = styled.div`
   left: 0;
   top: 40px;
   width: 100%;
-  height: calc(850px - 40px);
+  height: 100%;
   overflow-y: scroll;
   background-color: inherit;
-  padding: 0 10px;
+  padding: 10px;
 `;
