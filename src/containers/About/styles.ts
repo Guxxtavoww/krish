@@ -25,6 +25,13 @@ export const AboutImageContainer = styled.div`
     max-width: 336px;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 991px) {
+    img {
+      max-width: 236px;
+      max-height: 250px;
+    }
+  }
 `;
 
 export const AboutContent = styled.div`
