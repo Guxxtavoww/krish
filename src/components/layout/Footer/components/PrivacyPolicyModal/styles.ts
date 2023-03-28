@@ -33,6 +33,7 @@ export const PrivacyPolicyModalContainer = styled(motion.div)`
 `;
 
 export const CloseModalButton = styled(IconButton)`
+  position: absolute;
   background-color: ${MAIN_COLOR} !important;
   border-radius: 5px !important;
   color: #fff !important;
