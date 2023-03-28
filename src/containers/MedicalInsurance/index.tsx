@@ -13,8 +13,8 @@ const MedicalInsurance: React.FC = () => (
         <Insurance
           src={service}
           alt={`Convênio ${index}`}
-          whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 0.75 + index }}
+          animate={{ opacity: [0, 1] }}
+          transition={{ delay: 0.15 + (index - 0.75) }}
           key={index}
         />
       ))}

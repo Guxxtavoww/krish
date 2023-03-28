@@ -10,6 +10,7 @@ export const AboutContainer = styled.div`
 
   @media screen and (max-width: 1680px) {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 `;
 
