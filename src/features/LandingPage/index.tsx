@@ -7,6 +7,7 @@ import {
   Differentials,
   About,
   Procedures,
+  Contact,
 } from '@/containers';
 
 import { LandingPageContainer } from './styles';
@@ -19,6 +20,7 @@ const LandingPage: React.FC = () => (
     <Differentials />
     <About />
     <Procedures />
+    <Contact />
     <Footer />
   </LandingPageContainer>
 );
