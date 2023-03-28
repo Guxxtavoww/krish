@@ -5,7 +5,7 @@ import { ClickAwayListener, IconButton } from '@mui/material';
 import { mobile_header_logo } from '@/assets';
 import { MAIN_COLOR } from '@/styles/constants';
 
-import Logo from '../Logo';
+import Logo from '../../../Logo';
 import { header_links } from '../../utils/header_links';
 import {
   MobileMenuContainer,

@@ -22,6 +22,7 @@ import procedure10 from './img/procedure10.png';
 import procedure11 from './img/procedure11.png';
 import procedure12 from './img/procedure12.png';
 import contact_image from './img/contact_image.png';
+import instagram_icon from './img/instagram_icon.png';
 import mobile_header_logo from './img/mobile_header_logo.png';
 
 export {
@@ -31,6 +32,7 @@ export {
   icon3,
   icon4,
   site_logo,
+  instagram_icon,
   service1,
   service2,
   service3,

@@ -4,22 +4,36 @@ import styled from 'styled-components';
 import { MAIN_COLOR, MAIN_TEXT_COLOR } from '@/styles/constants';
 
 export const AboutContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
 
-  @media screen and (max-width: 1680px) {
-    grid-template-columns: 1fr;
+  & > * {
+    flex: 1;
+  }
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
   }
 `;
 
 export const AboutImageContainer = styled.div`
+  max-width: 100%;
   display: grid;
   place-items: center;
 
   img {
     max-width: 336px;
-    /* object-fit: cover; */
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 991px) {
+    img {
+      max-width: 236px;
+      max-height: 250px;
+    }
   }
 `;
 
@@ -31,9 +45,10 @@ export const AboutContent = styled.div`
   justify-content: center;
   gap: 5rem;
   padding-right: 3rem;
+  max-width: 100%;
 
   p.content_text {
-    font-size: 1em;
+    font-size: 1.05em;
     font-weight: 500;
     line-height: 1.65em;
     text-align: justify;
@@ -44,6 +59,8 @@ export const AboutContent = styled.div`
     align-items: center;
     padding-right: 0;
     gap: 2rem;
+    width: 100%;
+    padding: 0 8px;
   }
 `;
 

@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-import { MAIN_COLOR, MAIN_TEXT_COLOR } from './constants';
+import { MAIN_BG, MAIN_COLOR } from './constants';
 
 const GlobalStyles = createGlobalStyle`
   *,
@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: ${MAIN_BG};
   }
 
   h1,
@@ -49,11 +50,11 @@ const GlobalStyles = createGlobalStyle`
   a.logo {
     max-width: 220px;
     min-width: 120px;
-    max-height: 100%;
+    max-height: 72px;
     img {
       object-fit: cover;
       max-width: 100%;
-      height: 100%;
+      max-height: 72px;
     }
   }
 

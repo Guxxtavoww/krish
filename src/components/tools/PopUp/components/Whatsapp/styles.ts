@@ -62,7 +62,9 @@ export const FormContainer = styled.form`
 export const SubmitButton = styled(Button)`
   background-color: ${WHATSAPP_BUTTON_BG} !important;
   color: #fff !important;
+  text-transform: capitalize !important;
   padding: 5px 10px !important;
   font-size: 0.95em !important;
   font-weight: 300 !important;
+  margin-top: 10px !important;
 `;
