@@ -23,4 +23,10 @@ export const FooterContainer = styled.footer`
     cursor: pointer;
     background-color: transparent;
   }
+
+  @media screen and (max-width: 680px) {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
