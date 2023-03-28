@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-import { MAIN_BG, MAIN_COLOR, MAIN_TEXT_COLOR } from './constants';
+import { MAIN_BG, MAIN_COLOR } from './constants';
 
 const GlobalStyles = createGlobalStyle`
   *,
