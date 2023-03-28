@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { IconButton } from '@mui/material';
+
+import { MAIN_COLOR } from '@/styles/constants';
 
 export const PrivacyPolicyModalOverlay = styled(motion.div)`
   position: fixed;
@@ -17,4 +20,32 @@ export const PrivacyPolicyModalOverlay = styled(motion.div)`
   @media screen and (max-width: 680px) {
     overflow-y: scroll;
   }
+`;
+
+export const PrivacyPolicyModalContainer = styled(motion.div)`
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.75rem;
+  min-height: 850px;
+  width: 100%;
+  max-width: 500%;
+`;
+
+export const CloseModalButton = styled(IconButton)`
+  background-color: ${MAIN_COLOR} !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  top: 10px;
+  left: 10px;
+  height: 30px !important;
+  width: 30px !important;
+`;
+
+export const PrivacyPolicyModalContent = styled.div`
+  position: top;
+  left: 0;
+  top: 40px;
+  height: calc(850px - 40px);
+  overflow-y: scroll;
 `;
