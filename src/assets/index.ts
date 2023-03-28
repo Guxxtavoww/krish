@@ -78,13 +78,13 @@ export const diferentialsArray = [
     title: 'Experiência',
     content:
       '17 anos de experiência em medicina com especialização em dermatologia.',
-    icon: icon3,
+    icon: icon2,
   },
   {
     title: 'Tecnologia',
     content:
       'Contamos com avançadas e inovadoras tecnologias para oferecer o que há de melhor para nossos pacientes.',
-    icon: icon2,
+    icon: icon3,
   },
   {
     title: 'Tratamentos',
