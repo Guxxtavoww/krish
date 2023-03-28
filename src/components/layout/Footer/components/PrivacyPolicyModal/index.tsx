@@ -1,5 +1,7 @@
 import React from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { ClickAwayListener } from '@mui/material';
+import { Close as CloseIcon } from '@mui/icons-material';
 
 import { iPrivacyPolicyModalProps } from '../types';
 import { PrivacyPolicyModalOverlay } from './styles';
@@ -13,7 +15,9 @@ const PrivacyPolicyModal: React.FC<iPrivacyPolicyModalProps> = ({
       <PrivacyPolicyModalOverlay
         exit={{ opacity: [1, 0] }}
         animate={{ opacity: [0, 1] }}
-      ></PrivacyPolicyModalOverlay>
+      >
+        <ClickAwayListener onClickAway={handleClose}></ClickAwayListener>
+      </PrivacyPolicyModalOverlay>
     ) : null}
   </AnimatePresence>
 );
