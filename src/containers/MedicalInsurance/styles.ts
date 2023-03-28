@@ -7,6 +7,10 @@ export const InsurancesArrayContainer = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1.5rem;
+
+  @media screen and (max-width: 780px) {
+    justify-content: center;
+  }
 `;
 
 export const Insurance = styled(motion.img)`
