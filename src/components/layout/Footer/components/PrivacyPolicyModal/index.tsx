@@ -8,6 +8,7 @@ import {
   PrivacyPolicyModalOverlay,
   PrivacyPolicyModalContainer,
   CloseModalButton,
+  PrivacyPolicyModalContent,
 } from './styles';
 
 const PrivacyPolicyModal: React.FC<iPrivacyPolicyModalProps> = ({
@@ -31,6 +32,7 @@ const PrivacyPolicyModal: React.FC<iPrivacyPolicyModalProps> = ({
             <CloseModalButton type="button" onClick={handleClose}>
               <CloseIcon fill="#fff" />
             </CloseModalButton>
+            <PrivacyPolicyModalContent></PrivacyPolicyModalContent>
           </PrivacyPolicyModalContainer>
         </ClickAwayListener>
       </PrivacyPolicyModalOverlay>
