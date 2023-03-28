@@ -44,16 +44,18 @@ export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
           padding: 1.25rem 0;
         `}
 
-  h2.title {
-    font-size: clamp(1.25rem, 5vmin, 30px);
+  h2.title, 
+  h3.subtitle {
     font-weight: 400;
     text-align: left;
   }
 
   h3.subtitle {
     font-size: clamp(1.25rem, 5vmin, 22px);
-    font-weight: 400;
-    text-align: left;
+  }
+
+  h2.title {
+    font-size: clamp(1.25rem, 5vmin, 30px);
   }
 
   @media screen and (max-width: 991px) {
