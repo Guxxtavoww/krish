@@ -8,6 +8,9 @@ export const ContactContainer = styled.section`
   width: 100%;
   padding: 2rem 1.5rem;
   background-color: ${MAIN_BG};
+  @media screen and (max-width: 991px) {
+    padding: 2rem 10px;
+  }
 `;
 
 export const ContactInnerContainer = styled(motion.div)`
@@ -28,6 +31,7 @@ export const ContactInnerContainer = styled(motion.div)`
 export const ContactWrapper = styled.div<{ isImageContainer?: boolean }>`
   display: flex;
   color: ${MAIN_TEXT_COLOR};
+  max-width: 100%;
   ${(props) =>
     props.isImageContainer
       ? css`
