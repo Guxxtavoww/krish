@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { MAIN_COLOR, MAIN_TEXT_COLOR } from './constants';
+import { MAIN_BG, MAIN_COLOR, MAIN_TEXT_COLOR } from './constants';
 
 const GlobalStyles = createGlobalStyle`
   *,
@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: ${MAIN_BG};
   }
 
   h1,
