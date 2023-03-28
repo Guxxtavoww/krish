@@ -26,7 +26,7 @@ const Slider: React.FC = () => {
         position="left"
         onClick={() =>
           setCurrentScrollX((prevState) =>
-            prevState === 0 ? prevState + 1050 : prevState - 1050
+            prevState === 0 ? 1050 : prevState - 1050
           )
         }
       >
