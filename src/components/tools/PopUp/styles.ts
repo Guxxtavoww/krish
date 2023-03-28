@@ -24,7 +24,7 @@ export const PopUpOverlay = styled(motion.div)`
   }
 `;
 
-export const PopUpContainer = styled(motion.div)<{ isPrivacyPolicy: boolean }>`
+export const PopUpContainer = styled(motion.div)`
   position: relative;
   width: 100%;
   max-width: 520px;
@@ -43,14 +43,12 @@ export const CloseButton = styled(IconButton)<{
   currenttheme: iPopUpProps['type'];
 }>`
   position: absolute;
-  top: ${(props) => (props.currenttheme === 'policy' ? '8px' : '-20px')};
-  right: ${(props) => (props.currenttheme === 'policy' ? '8px' : '-95%')};
+  top: -20px;
+  right: -95%;
   width: 40px !important;
   height: 40px !important;
   border-radius: 8px !important;
   z-index: 5;
   background-color: ${(props) =>
-    props.currenttheme === 'phone' || props.currenttheme === 'policy'
-      ? MAIN_COLOR
-      : '#fff'} !important;
+    props.currenttheme === 'phone' ? MAIN_COLOR : '#fff'} !important;
 `;
