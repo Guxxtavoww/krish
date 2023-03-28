@@ -12,12 +12,8 @@ import {
 } from './styles';
 import { MAIN_TEXT_COLOR } from '@/styles/constants';
 
-const Link: FCWithChildren<iLinkProps, true> = ({ children }) => (
-  <a
-    href="https://goo.gl/maps/DnPxuYaeWz98hQqF9"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+const Link: FCWithChildren<iLinkProps, true> = ({ children, href }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
     {children}
   </a>
 );
