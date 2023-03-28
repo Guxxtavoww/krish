@@ -23,7 +23,7 @@ export const AboutImageContainer = styled.div`
 
   img {
     max-width: 336px;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
 `;
 
