@@ -20,6 +20,7 @@ export const PrivacyPolicyModalOverlay = styled(motion.div)`
   @media screen and (max-width: 680px) {
     overflow-y: scroll;
     padding: 1rem;
+    justify-content: flex-start;
   }
 `;
 
