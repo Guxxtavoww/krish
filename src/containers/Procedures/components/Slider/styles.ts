@@ -23,6 +23,7 @@ export const InnerSlider = styled.div`
   }
   img {
     border-radius: 8px;
+    min-width: 405px;
   }
 `;
 
