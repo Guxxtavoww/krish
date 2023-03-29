@@ -33,7 +33,7 @@ export const PrivacyPolicyModalContainer = styled(motion.div)`
   width: 100%;
   max-width: 500px;
   @media screen and (max-width: 680px) {
-    padding: 10px;
+    padding: 10px 1.75rem;
     height: 600px;
   }
 `;
@@ -48,7 +48,7 @@ export const CloseModalButton = styled(IconButton)`
   height: 30px !important;
   width: 30px !important;
   @media screen and (max-width: 680px) {
-    right: 10px;
+    right: 5px;
   }
 `;
 
