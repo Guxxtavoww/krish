@@ -38,7 +38,7 @@ export const CloseModalButton = styled(IconButton)`
   border-radius: 5px !important;
   color: #fff !important;
   top: 10px;
-  right: 10px;
+  right: 16px;
   height: 30px !important;
   width: 30px !important;
 `;
@@ -46,10 +46,26 @@ export const CloseModalButton = styled(IconButton)`
 export const PrivacyPolicyModalContent = styled.div`
   position: top;
   left: 0;
-  top: 40px;
+  top: 50px;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
   background-color: inherit;
-  padding: 10px;
+  padding: 10px 16px 10px 10px;
+
+  h3.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  p.text {
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+    &.list-item {
+      margin-bottom: 12px;
+    }
+  }
 `;
