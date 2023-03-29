@@ -10,7 +10,7 @@ export const PrivacyPolicyModalOverlay = styled(motion.div)`
   left: 0;
   z-index: 100000;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 4rem 1rem;
   background-color: rgba(0, 0, 0, 0.733);
@@ -19,6 +19,7 @@ export const PrivacyPolicyModalOverlay = styled(motion.div)`
 
   @media screen and (max-width: 680px) {
     overflow-y: scroll;
+    padding: 1rem;
   }
 `;
 
