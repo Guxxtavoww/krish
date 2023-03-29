@@ -77,4 +77,7 @@ export const PrivacyPolicyModalContent = styled.div`
       margin-bottom: 12px;
     }
   }
+  @media screen and (max-width: 680px) {
+    right: 20px;
+  }
 `;
