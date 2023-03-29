@@ -34,6 +34,7 @@ export const PrivacyPolicyModalContainer = styled(motion.div)`
   max-width: 500px;
   @media screen and (max-width: 680px) {
     padding: 10px;
+    height: 600px;
   }
 `;
 
