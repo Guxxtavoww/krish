@@ -52,9 +52,8 @@ const GlobalStyles = createGlobalStyle`
     min-width: 120px;
     max-height: 72px;
     img {
-      object-fit: cover;
       max-width: 100%;
-      max-height: 72px;
+      height: 72px;
     }
   }
 

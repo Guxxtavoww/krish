@@ -5,14 +5,15 @@ import { Button } from '@mui/material';
 
 import { MAIN_COLOR } from '@/styles/constants';
 
-export const MobileMenuContainer = styled.div`
+export const MobileMenuContainer = styled.div<{ isMenuOpen: boolean }>`
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  overflow: ${(props) => (props.isMenuOpen ? 'visible' : 'hidden')};
 
   .invisible-block {
     visibility: none;

@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
       <motion.img
         style={{
           width: '100%',
-          objectFit: !isMobileDevice ? 'cover' : undefined,
+          objectFit: !isMobileDevice ? 'cover' : 'fill',
         }}
         src={isMobileDevice ? site_mobile_banner : site_banner}
         whileInView={{ opacity: [0, 1], scale: [0.85, 1] }}

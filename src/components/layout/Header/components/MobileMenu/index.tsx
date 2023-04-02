@@ -16,6 +16,7 @@ import {
   MobileLogoContainer,
   ExitButton,
 } from './styles';
+import { AnimatePresence } from 'framer-motion';
 
 const MobileMenu: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const MobileMenu: React.FC = () => {
 
   return (
     <>
-      <MobileMenuContainer>
+      <MobileMenuContainer isMenuOpen={isMobileMenuOpen}>
         <IconButton
           onClick={() => setIsMobileMenuOpen((prevState) => !prevState)}
         >
@@ -33,29 +34,34 @@ const MobileMenu: React.FC = () => {
         <Logo />
         <div className="invisible-block" />
       </MobileMenuContainer>
-      {isMobileMenuOpen ? (
-        <MobileMenuWrapper animate={{ scale: [0.85, 1], opacity: [0, 1] }}>
-          <ClickAwayListener onClickAway={handleClickLink}>
-            <MobileMenuInnerWrapper>
-              <MobileLogoContainer to="#root" onClick={handleClickLink}>
-                <img src={mobile_header_logo} alt="header_mobile_logo" />
-              </MobileLogoContainer>
-              <MobileLinksContainer>
-                {header_links.map((link, index) => (
-                  <MobileLink
-                    to={link.to}
-                    key={index}
-                    onClick={handleClickLink}
-                  >
-                    {link.label}
-                  </MobileLink>
-                ))}
-              </MobileLinksContainer>
-              <ExitButton onClick={handleClickLink}>Fechar Menu</ExitButton>
-            </MobileMenuInnerWrapper>
-          </ClickAwayListener>
-        </MobileMenuWrapper>
-      ) : null}
+      <AnimatePresence>
+        {isMobileMenuOpen ? (
+          <MobileMenuWrapper
+            animate={{ scale: [0.85, 1], opacity: [0, 1] }}
+            exit={{ scale: [1, 0.85], opacity: [1, 0] }}
+          >
+            <ClickAwayListener onClickAway={handleClickLink}>
+              <MobileMenuInnerWrapper>
+                <MobileLogoContainer to="#root" onClick={handleClickLink}>
+                  <img src={mobile_header_logo} alt="header_mobile_logo" />
+                </MobileLogoContainer>
+                <MobileLinksContainer>
+                  {header_links.map((link, index) => (
+                    <MobileLink
+                      to={link.to}
+                      key={index}
+                      onClick={handleClickLink}
+                    >
+                      {link.label}
+                    </MobileLink>
+                  ))}
+                </MobileLinksContainer>
+                <ExitButton onClick={handleClickLink}>Fechar Menu</ExitButton>
+              </MobileMenuInnerWrapper>
+            </ClickAwayListener>
+          </MobileMenuWrapper>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 };
